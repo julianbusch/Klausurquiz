@@ -7,6 +7,10 @@ import {Frage3Component} from "../fragen/frage3/frage3.component";
 import {Frage4Component} from "../fragen/frage4/frage3.component";
 import {Frage5Component} from "../fragen/frage5/frage3.component";
 import {Frage6Component} from "../fragen/frage6/frage3.component";
+import {Frage7Component} from "../fragen/frage7/frage3.component";
+import {Frage8Component} from "../fragen/frage8/frage3.component";
+import {Frage9Component} from "../fragen/frage9/frage3.component";
+import {Frage10Component} from "../fragen/frage10/frage3.component";
 
 
 const routes: Routes = [
@@ -17,6 +21,10 @@ const routes: Routes = [
   {path: 'frage4', component: Frage4Component},
   {path: 'frage5', component: Frage5Component},
   {path: 'frage6', component: Frage6Component},
+  {path: 'frage7', component: Frage7Component},
+  {path: 'frage8', component: Frage8Component},
+  {path: 'frage9', component: Frage9Component},
+  {path: 'frage10', component: Frage10Component},
 
 
 ];
