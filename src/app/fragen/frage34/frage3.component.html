@@ -1,0 +1,44 @@
+<h1>KAPITEL TYPESCRIPT:</h1>
+<br>
+Frage34:
+schreibe eine beispiel function fürs addieren zweier werte <br>
+schreibe dann noch 3 functions mit jeweils 1 optionalem parameter, 1 default parameter und 1 rest parameter
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage35">Nächste Frage</button>
+    <button routerLink="/frage33" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+function addiere(a:number, b:number):number{{'{'}}
+  return a+b;
+  }
+
+optionaler parameter:
+  function addiere(a:number, b:number, c?:number):number{{'{'}}...} // optionaler param muss immer als letztes in der Liste stehen,
+  //wenn beim aufruf nicht angegeben, ist default undefined
+
+  default parameter:
+  function addiere(a:number, b:number, c:number=0):number{{'{'}}...} //default wert wird benutztm wenn parameter nicht angegeben, statt undefined bei optional
+  // musss ebenfalls immer als letztes in der liste stehen
+
+  rest parameter:
+  function addiere(a:number, ...rest:number[]):number{{'{'}}...}  // rest ist ein array mit beliebig vielen optionalen parametern, kann mit schleife durchiteriert und ausgelesen werden.
+
+
+
+</pre>
+
+
+<div style="display: block"></div>

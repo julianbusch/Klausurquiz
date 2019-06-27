@@ -1,0 +1,44 @@
+<h1>KAPITEL TYPESCRIPT:</h1>
+<br>
+Frage24:
+gebe Beispiele für die typkonvertierung von string nach boolean und boolean nach string
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage25">Nächste Frage</button>
+    <button routerLink="/frage23" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+string nach boolean (durch vergleich mit true):
+  let s:string="false";
+  let b:boolean=s=="true";
+
+  string nach boolean (durch vergleich mit true und false):
+  let s:string = "false";
+  let b:boolean=s=="true"? true:s=="false"? false:undefined;
+
+  boolean nach string:
+  let b:boolean:"false";
+  let s:string=""+b;
+
+  boolean nach string mit template string:
+  let b:boolean="false";
+  let s:string=`${{b}`;
+
+
+
+</pre>
+
+
+<div style="display: block"></div>

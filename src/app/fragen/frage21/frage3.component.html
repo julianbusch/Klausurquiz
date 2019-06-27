@@ -1,0 +1,49 @@
+<h1>KAPITEL TYPESCRIPT:</h1>
+<br>
+Frage21:
+gebe ein Beispiel für die deklaration und aufruf einer enum
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage22">Nächste Frage</button>
+    <button routerLink="/frage20" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+enum Color{{
+  Red,
+  Green,
+  Blue
+  }     // kein ; am ende, wie bei klassen
+
+  deklaration von enum variablen:
+  let c: Color= Color.Red; //statisch
+  let c2=Color.Green;  //dynamisch
+
+  Zugriff:
+  Color[c]; // == Red
+
+  Aufzählungen von enums:
+  enum Monat{{
+  Januar =1,  // 1
+  Februar, // bekommt automatisch 2
+  März = 4 //wäre 3, ist aber nun 4
+  }
+
+
+
+
+</pre>
+
+
+<div style="display: block"></div>

@@ -1,0 +1,58 @@
+<h1>KAPITEL TYPESCRIPT:</h1>
+<br>
+Frage29:
+schreibe eine einfache typescript klasse, mit optionalem attribut, readonly attribut und konstruktor.
+gebe weiterhin die verkürzte schreibweise für einen construktor an
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage30">Nächste Frage</button>
+    <button routerLink="/frage28" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+class Professor{{'{'}}
+
+  vorname:string;
+  nachname:string;
+  kuerzel?:string;
+  readonly raum?:string;
+
+  constructor(vorname:string, nachname:string, kuerzel:string, readonly raum?:string){{'{'}}
+  this.vorname=vorname;
+  this.nachname=nachname;
+  this.kuerzel=kuerzel;
+  this.raum=raum;
+  }
+
+
+
+
+  }
+
+  oder kürzer:
+  class Professor{{'{'}}
+
+  constructor(public vorname:string, public nachname:string){{'{'}}
+  // parameter attribute können durch schlüsselworte public, private, protected, oder readonly hinzugefüt werden.
+  // deswegen brauchen wir hier keine attribute in die klasse zu schreiben, oder sie mit this. zuzuweisen
+
+  }
+  }
+
+
+
+</pre>
+
+
+<div style="display: block"></div>
