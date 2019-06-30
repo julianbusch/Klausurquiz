@@ -1,7 +1,6 @@
 <h1>KAPITEL TYPESCRIPT:</h1>
 <br>
-Frage30:
-gebe ein Beispiel für Getter und Setter
+Frage39: erkläre, was ein typescript modul ist
 <br>
 <br>
 <form>
@@ -12,34 +11,39 @@ gebe ein Beispiel für Getter und Setter
   <br>
   <button type="button" (click)="removelsg()">Lösung verbergen</button>
   <p>
-    <button routerLink="/frage31">Nächste Frage</button>
-    <button routerLink="/frage29" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage40">Nächste Frage</button>
+    <button routerLink="/frage38" style="margin-left: 10px">Vorherige Frage</button>
     <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
   </p>
 
 </form>
 <pre id="lösung" style="display: none">
 
-class Professor{{'{'}}
-  private _raum: string; // _ muss vor die variable, damit kein namenskonflikt mit der get methode raum() entsteht
+typescript datei wird zum modul, wenn auf oberster ebene ein expor/import befehl ist. typescript modul = eine typscript datei, mit eigenem scope. typescript module gibt es erst seit ECMAscript 2015 (es2015).
+  wenn man die javascript datei als modul verwenden will muss man dat attribut {{'type="module"'}} beim einbinden der js datei in die index html schreiben.
+  außerhalb eines moduls ist nur sichtbar, was mit export gekennzeichnet ist, hierzu gibt es 2 möglichkeiten:
 
-  constructor(public vorname:string, public nachname:string, raum?:string){{'{'}}
-  this._raum=raum;
-  }
+  direkt an der klasse:
+  z.B.: export class Dozent {{'{'}} /* ... */ }
 
-  get raum():string{{'{'}}
-  return this._raum; / return `Raum ${{'{'}} this._raum}`;  // rechts mit template string
-  }
+  als sammlung:
+  export {{'{'}} ding1, ding2, ding3 };
+  z.B.: export {{'{'}}Dozent, Professor, Lehrbeauftragter};
 
-  set raum(neuerRaum: string){{'{'}}
-  this._raum=neuerRaum;
-  }
-  }
+  wenn eine typescript datei eine klasse importiert wird sie auch zum modul. Import immer als .js datei, nicht .ts. bsp:
+  import {{'{'}} Dozent, Professor, Lehrbeauftragter } from './dozent.js'
 
-  verwendung der getter und setter:
-  let specht:Professor=new Professor("Thomas", "Specht", "109");
-  specht.raum="10000"; // dies ruft den setter auf und ändert den wert
-  document.body.innerHTML=specht.raum; // dies ruft den getter auf, also kommt in das DOM der neue Wert "10000"
+  wenn man alle exporte aus einem modul importieren will, benutzt man
+  import * as aliasname from "";
+
+  z.B.: import * as dozenten from './dozent.js';
+
+  aufruf: mit aliasname.Klassenname
+   Beispiel: let gerten: dozenten.Professor = new dozenten.Professor( /* ... */ );
+
+
+
+
 
 
 

@@ -1,0 +1,39 @@
+<h1>KAPITEL TYPESCRIPT:</h1>
+<br>
+Frage41: erkläre, was ein dekorator ist und gib beispiele
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage42">Nächste Frage</button>
+    <button routerLink="/frage40" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+gleichwertig annotation= schlüsselworte. keine vorgefertigten dekoratoren in typescript, dafür aber in angular.
+
+  Beispiel:
+  Klasse kennzeichnen als Angular-Komponente: @Component(), Angular-Modul: @NgModule()
+Methode kennzeichnen als Event-Listener: @HostListener()
+Attribut kennzeichnen als Eingabeattribut: @Input()
+Parameter kennzeichnen als automatisch befüllter Konstruktor-Parameter: @Inject
+
+  @Injectable({{'{'}} // JSON-Objekt als Dekorator-Parameter
+providedIn: 'root'
+})
+
+
+
+</pre>
+
+
+<div style="display: block"></div>

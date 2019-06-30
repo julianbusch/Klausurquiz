@@ -41,6 +41,16 @@ import {Frage37Component} from "../fragen/frage37/frage3.component";
 import {Frage38Component} from "../fragen/frage38/frage3.component";
 import {Frage39Component} from "../fragen/frage39/frage3.component";
 import {Frage40Component} from "../fragen/frage40/frage3.component";
+import {Frage41Component} from "../fragen/frage41/frage3.component";
+import {Frage42Component} from "../fragen/frage42/frage3.component";
+import {Frage43Component} from "../fragen/frage43/frage3.component";
+import {Frage44Component} from "../fragen/frage44/frage3.component";
+import {Frage45Component} from "../fragen/frage45/frage3.component";
+import {Frage46Component} from "../fragen/frage46/frage3.component";
+import {Frage47Component} from "../fragen/frage47/frage3.component";
+import {Frage48Component} from "../fragen/frage48/frage3.component";
+import {Frage49Component} from "../fragen/frage49/frage3.component";
+import {Frage50Component} from "../fragen/frage50/frage3.component";
 
 
 const routes: Routes = [
@@ -85,6 +95,16 @@ const routes: Routes = [
   {path: 'frage38', component: Frage38Component},
   {path: 'frage39', component: Frage39Component},
   {path: 'frage40', component: Frage40Component},
+  {path: 'frage41', component: Frage41Component},
+  {path: 'frage42', component: Frage42Component},
+  {path: 'frage43', component: Frage43Component},
+  {path: 'frage44', component: Frage44Component},
+  {path: 'frage45', component: Frage45Component},
+  {path: 'frage46', component: Frage46Component},
+  {path: 'frage47', component: Frage47Component},
+  {path: 'frage48', component: Frage48Component},
+  {path: 'frage49', component: Frage49Component},
+  {path: 'frage50', component: Frage50Component},
 
 
 

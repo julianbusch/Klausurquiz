@@ -42,6 +42,16 @@ import {Frage37Component} from "./frage37/frage3.component";
 import {Frage38Component} from "./frage38/frage3.component";
 import {Frage39Component} from "./frage39/frage3.component";
 import {Frage40Component} from "./frage40/frage3.component";
+import {Frage41Component} from "./frage41/frage3.component";
+import {Frage42Component} from "./frage42/frage3.component";
+import {Frage43Component} from "./frage43/frage3.component";
+import {Frage44Component} from "./frage44/frage3.component";
+import {Frage45Component} from "./frage45/frage3.component";
+import {Frage46Component} from "./frage46/frage3.component";
+import {Frage47Component} from "./frage47/frage3.component";
+import {Frage48Component} from "./frage48/frage3.component";
+import {Frage49Component} from "./frage49/frage3.component";
+import {Frage50Component} from "./frage50/frage3.component";
 
 @NgModule({
   declarations: [Frage1Component, Frage2Component, Frage3Component, Frage4Component, Frage5Component, Frage6Component,
@@ -50,7 +60,9 @@ import {Frage40Component} from "./frage40/frage3.component";
     Frage19Component, Frage20Component, Frage21Component, Frage22Component, Frage23Component, Frage24Component,
     Frage25Component, Frage26Component, Frage27Component, Frage28Component, Frage29Component, Frage30Component,
     Frage31Component, Frage32Component, Frage33Component, Frage34Component, Frage35Component, Frage36Component,
-    Frage37Component, Frage38Component, Frage39Component, Frage40Component
+    Frage37Component, Frage38Component, Frage39Component, Frage40Component, Frage41Component, Frage42Component,
+    Frage43Component, Frage44Component, Frage45Component, Frage46Component, Frage47Component, Frage48Component,
+    Frage49Component, Frage50Component
 
   ],
   imports: [

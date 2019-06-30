@@ -1,0 +1,39 @@
+<h1>KAPITEL ANGULAR:</h1>
+<br>
+Frage46: was ist eine Domänenklasse? und gib ein beispiel
+<br>
+<br>
+<form>
+  Deine Lösung: <textarea name="message"style="width:100%; height:200px;"></textarea>
+  <br>
+  <button type="button" (click)="doit()">Lösung anzeigen</button>
+  <br>
+  <br>
+  <button type="button" (click)="removelsg()">Lösung verbergen</button>
+  <p>
+    <button routerLink="/frage47">Nächste Frage</button>
+    <button routerLink="/frage45" style="margin-left: 10px">Vorherige Frage</button>
+    <button routerLink="/frage1" style="margin-left: 10px">Erste Frage</button>
+  </p>
+
+</form>
+<pre id="lösung" style="display: none">
+
+die Domänenklasse ist das Datenmodell der gesamtanwendung, ähnlich zu hibernate, darf keine functions neben dem construktor
+  enthalten, weil man sonst die domänenklasse nicht mehr als JSON über den RESTfulWebservice schicken kann.
+  die domainclass ist nicht Bestandteil einer Komponente
+
+  beispiel:
+
+  export class Professor{{'{'}}
+  vorname:string;
+  nachname:string;
+  kuerzel:string;
+  raum?:string;
+  telefon?:string;
+  }
+
+</pre>
+
+
+<div style="display: block"></div>
